@@ -9,9 +9,10 @@ import (
 	swaggerfiles "github.com/swaggo/files"
 	ginSwagger "github.com/swaggo/gin-swagger"
 	"log"
+	"os"
 )
 
-const appPort = "8888"
+var appPort = os.Getenv("PORT")
 
 func main() {
 
